@@ -1,0 +1,68 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/Content/clients/css_dangnhap/style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+ 
+        <form autocomplete='off' class='form' method="post">
+            <div class='control'>
+                <h1>
+                    Admin
+                </h1>
+            </div>
+            <div>
+                <div class='control block-cube block-input'>
+                    <input name='taikhoan' placeholder='Tài khoản' type='text' value="@ViewBag.taikhoan">
+                    <div class='bg-top'>
+                        <div class='bg-inner'></div>
+                    </div>
+                    <div class='bg-right'>
+                        <div class='bg-inner'></div>
+                    </div>
+                    <div class='bg'>
+                        <div class='bg-inner'></div>
+                    </div>
+                </div>
+                <div class='control block-cube block-input'>
+                    <input name='matkhau' placeholder='Mật khẩu' type='password' value="@ViewBag.matkhau">
+                    <div class='bg-top'>
+                        <div class='bg-inner'></div>
+                    </div>
+                    <div class='bg-right'>
+                        <div class='bg-inner'></div>
+                    </div>
+                    <div class='bg'>
+                        <div class='bg-inner'></div>
+                    </div>
+                </div>
+                @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+                {
+                    <div class="text-danger">@ViewBag.ErrorMessage</div>
+                }
+                <button class='btn block-cube block-cube-hover' type='submit'>
+                    <div class='bg-top'>
+                        <div class='bg-inner'></div>
+                    </div>
+                    <div class='bg-right'>
+                        <div class='bg-inner'></div>
+                    </div>
+                    <div class='bg'>
+                        <div class='bg-inner'></div>
+                    </div>
+                    <div class='text'>
+                        Đăng nhập
+                    </div>
+                </button>
+            </div>
+
+        </form>
+    
+
+</body>
+</html>

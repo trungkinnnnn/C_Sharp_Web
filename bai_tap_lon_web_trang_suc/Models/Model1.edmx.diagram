@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e9c7c23efec440d08fffa151145735b3" Name="Diagram1">
+        <EntityTypeShape EntityType="web_trang_sucModel.Admin" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.ChiTietDonHang" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.ChiTietGioHang" Width="1.5" PointX="8.25" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.ChiTietPhieuNhap" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.DonHang" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.GioHang" Width="1.5" PointX="6" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.HinhAnh" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.KhachHang" Width="1.5" PointX="3.75" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.LoaiSanPham" Width="1.5" PointX="0.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.NhaCungCap" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.PhieuNhap" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.SanPham" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.sysdiagram" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="web_trang_sucModel.TaiKhoan" Width="1.5" PointX="1.5" PointY="20.625" IsExpanded="true" />
+        <AssociationConnector Association="web_trang_sucModel.FK_PhieuNhap_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_ChiTietDonHang_DonHang" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_ChiTietDonHang_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_ChiTietGioHang_GioHang" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_ChiTietGioHang_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_ChiTietPhieuNhap_PhieuNhap" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_ChiTietPhieuNhap_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_GioHang_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_HinhAnh_SanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_KhachHang_TaiKhoan" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_SanPham_LoaiSanPham" ManuallyRouted="false" />
+        <AssociationConnector Association="web_trang_sucModel.FK_PhieuNhap_NhaCungCap" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

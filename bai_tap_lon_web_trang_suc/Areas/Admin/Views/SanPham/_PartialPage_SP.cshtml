@@ -1,0 +1,38 @@
+﻿
+@model IEnumerable<bai_tap_lon_web_trang_suc.Models.SanPham>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Hình ảnh
+        </th>
+        <th>
+            Tên sản phẩm
+        </th>
+        <th>
+            Loại sản phẩm
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @if (!string.IsNullOrEmpty(item.HinhAnh))
+                {
+                    <img src="@Url.Content(item.HinhAnh)" style="max-width:70px ;height:auto" alt="Ảnh sản phẩm" />
+                }
+            </td>
+            <td>
+                @item.TenSanPham
+            </td>
+            <td>
+                @item.LoaiSanPham.TenloaiSanPham
+            </td>
+        </tr>
+    }
+
+</table>
+

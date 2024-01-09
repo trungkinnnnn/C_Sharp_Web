@@ -1,0 +1,70 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DangNhap</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,800">
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/Login/Login.css">
+</head>
+<body>
+    <div class="container" id="container">
+    <!-- Phần Đăng Nhập -->
+    <div class="form-container sign-in-container">
+        <form action="@Url.Action("DangNhap", "DangNhap")" method="post">
+            @Html.AntiForgeryToken()
+            <h1>Đăng nhập</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>hoặc sử dụng tài khoản của bạn</span>
+            <input type="email" placeholder="Email" name="TaiKhoan1" />
+            <input type="password" placeholder="Mật khẩu" name="MatKhau" />
+            <input type="hidden" name="action" value="login" />
+            <a href="#">Quên mật khẩu?</a>
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </div>
+
+    <!-- Phần Đăng Ký -->
+    <div class="form-container sign-up-container">
+        <form action="@Url.Action("DangNhap", "DangNhap")" method="post">
+            <h1>Tạo tài khoản</h1>
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>hoặc sử dụng email của bạn để đăng ký</span>
+            <input type="email" placeholder="Email" name="TaiKhoan1" />
+            <input type="password" placeholder="Mật khẩu" name="MatKhau" />
+            <input type="hidden" name="action" value="register" />
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+    <!-- Phần Overlay -->
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>Chào mừng trở lại!</h1>
+                <p>Để duy trì kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+                <button class="ghost" id="signIn">Đăng nhập</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Xin chào, bạn!</h1>
+                <p>Nhập chi tiết cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+                <button class="ghost" id="signUp">Đăng Ký</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="~/Content/assets/Login/Login.js"></script>
+</body>
+</html>
